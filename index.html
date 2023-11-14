@@ -10,39 +10,47 @@
 <div class="center">
     <div class="container">
 
-        <div class="input"></div>
+       <section class="calculator">
+
+        <input type="text" class="screen" disabled>
+        
         <div class="pos">
+          <div class="buttons">
         <div class="row1">
-            <button class="b1">AC</button>
-            <button class="b2">%</button>
-            <button class="b3">C</button>
-            <button class="b4">÷</button>
+            <button type="button" class="b1" id="btn-clear">AC</button>
+            <button type="button" class="b2" id="btn" data-num="%">%</button>
+            <button type="button" class="b3" id="btn-clear">C</button>
+            <button type="button" class="b4" id="btn" data-num="/">÷</button>
         </div>
+
         <div class="row2">
-            <button class="b5">7</button>
-            <button class="b6">8</button>
-            <button class="b7">9</button>
-            <button class="b8">×</button>
+            <button type="button" class="b5" id="btn" data-num="7">7</button>
+            <button type="button" class="b6" id="btn"  data-num="8">8</button>
+            <button type="button" class="b7" id="btn"  data-num="9">9</button>
+            <button type="button" class="b8" id="btn"  data-num="*">x</button>
         </div>
         <div class="row3">
-            <button class="b9">4</button>
-            <button class="b10">5</button>
-            <button class="b11">6</button>
-            <button class="b12">-</button>
+            <button type="button" class="b9" id="btn"  data-num="4">4</button>
+            <button type="button" class="b10" id="btn"  data-num="5">5</button>
+            <button type="button" class="b11" id="btn"  data-num="6">6</button>
+            <button type="button" class="b12" id="btn"  data-num="-">-</button>
         </div>
         <div class="row4">
-            <button class="b13">1</button>
-            <button class="b14">2</button>
-            <button class="b15">3</button>
-            <button class="b16">+</button>
+            <button type="button" class="b13" id="btn"  data-num="1">1</button>
+            <button type="button" class="b14" id="btn" data-num="2">2</button>
+            <button type="button" class="b15" id="btn" data-num="3">3</button>
+            <button type="button" class="b16" id="btn" data-num="+">+</button>
         </div>
+
         <div class="row5">
-            <button class="b17">00</button>
-            <button class="b18">0</button>
-            <button class="b19">.</button>
-            <button class="b20">=</button>
+            <button type="button" class="b17" id="btn" data-num="00">00</button>
+            <button type="button" class="b18" id="btn" data-num="0">0</button>
+            <button type="button" class="b19" id="btn" data-num=".">.</button>
+            <button type="button" class="b20" id="btn-equal">=</button>
         </div>
+      </div>
     </div>
+  </section>
     </div>
 </div>
     <style>
@@ -189,7 +197,7 @@
       margin-bottom : 10px;
       margin-top: 20px;
     }
-    .input {
+    input {
       margin-top:8px;
       margin-left:20px;
       width:300px;
@@ -197,6 +205,7 @@
       background-color: #fff;
       box-shadow: 2px 1px 5px black;
       border:1px solid black;
+      font-size: x-large;
     }
 
     .center {
@@ -209,5 +218,6 @@
 
     
     </style>
+    <script src="/script.js"></script>
 </body>
 </html>
